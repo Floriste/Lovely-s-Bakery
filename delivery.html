@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <title>Cookie Ni Lovely // home</title>
+
+    <body>
+    </body>
+    <div class="navi">
+        <img class="logo" src="logo_01.png">
+        
+        <center>
+            <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="cart.png">
+            </div>
+            <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#128722;</span> 
+            <script>
+            function openNav() 
+            {
+                document.getElementById("mySidenav").style.width = "365px";
+            }
+                
+            function closeNav() 
+            {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+        
+            <button class="home" onclick="goHome()">
+                Home
+            </button>
+
+            <script>
+                function goHome()
+                {
+                    window.location="chippy.html";
+                }
+            </script>
+        
+        <button class="about" onclick="goabout()">
+            About Us
+        </button>
+
+        <script>
+            function goabout()
+            {
+                window.location="about.html";
+            }
+        </script>
+        
+            <button class="del">
+                Delivery
+            </button>
+        
+            <button class="info" onclick="gocontact()">
+                Contact 
+            </button>
+
+            <script>
+                function gocontact()
+                {
+                    window.location="contact.html";
+                }
+            </script>
+
+            <input class="search" type="text" placeholder="Find Your Pastry!  ^.^">
+            <img class="profile" src="profile.png">
+            <img class="setting" src="settings.png">
+        </center>
+        <hr>
+    </div>
+    
+    <img class="ong" src="delivery_02.png">
+
+    <hr>
+
+    <img class="purchase" src="purchaseHis.png">
+
+    <img class="route" src="route.png">
+
+    </body>
+</html>
+
+<style>
+
+    body
+    {
+        overflow-y: scroll;
+    }
+    
+    html
+    {
+         width: 1903px;
+    }
+    
+    body
+    {
+        background-color: rgba(230,169,76,255);
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .navi
+    {
+        background-color: rgb(241, 204, 85);
+    }
+
+    .home, .about, .info
+    {
+        width: 100px;
+        height: 40px;
+        margin: 30px;
+        margin-left: 100px;
+
+        border-radius: 50px;
+        background-color: rgb(246, 219, 130);
+        cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+    }
+
+    .del
+    {
+        width: 100px;
+        height: 40px;
+        margin: 30px;
+        margin-left: 100px;
+        border-radius: 50px;
+        background-color: #e8a93c;
+        cursor: pointer;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+    }
+
+    .home:hover, .about:hover, .info:hover
+    {
+        background-color: #e8a93c;
+        transition: 0.5s;
+    }
+
+    .logo
+    {
+        width: 350px;
+        height: 100px;
+        float: left;
+        margin-top: 5px;
+        margin-left: 20px;
+       
+    }
+
+    .profile
+    {
+        width: 69px;
+        height: 55px;
+        float: right;
+        margin-bottom: 10px;
+        margin-top: 25px;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+    
+    .setting
+    {
+        width: 55px;
+        height: 55px;
+        float: right;
+        margin-top: 25px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .search
+    {
+        width: 150px;
+        height: 30px;
+        margin-left: 50px;
+        background-color: rgb(255, 255, 255);
+        border-color: rgb(0, 0, 0);
+        border-radius: 5px;
+        border: none;
+    }
+
+    .promo2
+    {
+        margin-left: 50px;
+        width: 640px;
+        height: 640px;
+    }
+
+    .sidenav 
+    {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(255,196,147);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        float: right;
+    }
+
+    .sidenav a 
+    {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #000000;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav .closebtn 
+    {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+    }
+
+    @media screen and (max-height: 450px) 
+    {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+
+    .ong
+    {
+        padding-left: 250px;
+        padding-bottom: 20px;
+    }
+
+    .purchase,
+    .route
+    {
+        width: 600px;
+        height: 400px;
+    }
+
+    .purchase
+    {
+        margin-left: 250px;
+    }
+
+    .route
+    {
+        margin-left: 190px;
+        border: solid;
+        border-color: rgb(217, 86, 39);
+    }
+
+</style>
